@@ -94,11 +94,11 @@
 
         
 
-
-            $emailTo="aadaro@gmail.com";
+            //Sends to the submitter; for real use change to your email
+            $emailTo="$email";
             $subject=$subject;
             $body=$message;
-            $headers="From: mail@arob.in\n";
+            $headers="From: mail@mail.com\n";
             $headers.="Reply-to: $email";
 
             if(mail($emailTo, $subject, $body, $headers)) {
